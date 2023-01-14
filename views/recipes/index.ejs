@@ -1,0 +1,14 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>All your recipes are here</h1>
+  <h2>Click on a recipe name to view details</h2>
+	<ul>
+  <% recipes.forEach(recipe => { %>
+    <li><%= recipe.name %></li>
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>

@@ -3,10 +3,25 @@
 
 <section>
   <h1>All your recipes are here</h1>
-  <h2>Click on a recipe name to view details</h2>
+  <h2>Add a recipe</h2>
+  <form action="/recipes" method="POST">
+    <label>Name of recipe:
+    <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>Ingredients:
+      <input type="text" name="ingredients" autocomplete="off">
+    </label>
+    <label>Directions:</label>
+    <input type="text" name="directions"
+    autocomplete="off">
+    <button type="sumbit">Add recipe</button>
+  </form>
 	<ul>
   <% recipes.forEach(recipe => { %>
-    <li><%= recipe.name %></li>
+    <li><%= recipe.name %>
+      <%= recipe.ingredients %>
+      <%= recipe.directions %>
+    </li>
   <% }) %>
   </ul>
 </section>

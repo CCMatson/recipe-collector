@@ -11,11 +11,25 @@ function index(req, res){
   })
   .catch(err => {
     console.log(err)
-    res.redirect("/")
+    res.redirect('/')
   })
-
 }
 
+function create(req, res){
+  req.body.owner = req.user.profile._id
+  Recipe.create(req.body)
+  .then(recipe => {
+    res.redirect('/recipes')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/recipes')
+  })
+}
+
+
+
 export {
-  index
+  index,
+  create
 }

@@ -16,11 +16,11 @@
     autocomplete="off">
     <button type="sumbit">Add recipe</button>
   </form>
+
 	<ul>
   <% recipes.forEach(recipe => { %>
-    <li><%= recipe.name %>
-      <%= recipe.ingredients %>
-      <%= recipe.directions %>
+    <li>🤡
+      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %></a>
     </li>
   <% }) %>
   </ul>

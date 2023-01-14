@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #0829e5;
-  color: #cbf1d3;
+  background-color: #afb9f0;
+  color: #010f04;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -34,7 +34,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
+
 
 .right {
   margin-left: auto;

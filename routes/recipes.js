@@ -8,6 +8,7 @@ router.get('/', recipesCtrl.index)
 router.get('/:id' , recipesCtrl.show)
 router.get('/:id/edit', isLoggedIn, recipesCtrl.edit)
 router.post('/', isLoggedIn, recipesCtrl.create)
+router.post('/:id/reviews', recipesCtrl.createReview)
 router.put('/:id', isLoggedIn, recipesCtrl.update)
 router.delete('/:id', isLoggedIn, recipesCtrl.delete)
 

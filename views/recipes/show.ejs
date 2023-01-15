@@ -16,9 +16,8 @@
             <button class="btn" type="submit">Delete this recipe</button>
           </form>
         <% } %>  
-    </section>
   </section>
-  <% // new markup below %>
+
   <h2>Reviews</h2>
   <form 
     id="add-review-form"
@@ -37,6 +36,7 @@
     </select>
     <button type="submit">Add Review</button>
   </form>
+
   <% if (recipe.reviews.length) { %>
     <table>
       <thead>
@@ -59,4 +59,5 @@
   <% } else { %>
     <h3>No Reviews Yet</h3>
   <% } %>
+
     <%- include('../partials/footer') %>

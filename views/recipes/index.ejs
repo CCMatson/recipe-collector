@@ -4,7 +4,7 @@
 <section>
   <h1>All your recipes are here</h1>
   <h2>Add a recipe</h2>
-  <form action="/recipes" method="POST">
+  <form id="new-form" action="/recipes" method="POST">
     <label>Name of recipe:
     <input type="text" name="name" required="required" autocomplete="off">
     </label>
@@ -19,7 +19,7 @@
 
 	<ul>
   <% recipes.forEach(recipe => { %>
-    <li>🤡
+    <li>
       <a href="/recipes/<%= recipe._id %>"><%= recipe.name %>
       <% }) %></a>
     </li>

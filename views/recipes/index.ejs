@@ -6,13 +6,13 @@
   <h2>Add a recipe</h2>
   <form action="/recipes" method="POST">
     <label>Name of recipe:
-    <input type="text" name="name" autocomplete="off">
+    <input type="text" name="name" required="required" autocomplete="off">
     </label>
     <label>Ingredients:
-      <input type="text" name="ingredients" autocomplete="off">
+      <input type="text" name="ingredients" required="required" autocomplete="off">
     </label>
-    <label>Instruction:</label>
-    <input type="text" name="instructions"
+    <label>Instructions:</label>
+    <input type="text" name="instructions" required="required"
     autocomplete="off">
     <button type="sumbit">Add recipe</button>
   </form>
@@ -20,7 +20,7 @@
 	<ul>
   <% recipes.forEach(recipe => { %>
     <li>🤡
-      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %><%= recipe.instructions %> 
+      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %>
       <% }) %></a>
     </li>
   </ul>

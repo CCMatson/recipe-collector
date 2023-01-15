@@ -1,29 +1,41 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/recipes/index.css" />
 <%- include('../partials/nav') %>
 
+<body>
 <section class="index-body">
-  <h1>All your recipes are here</h1>
+  <div class="headlines">
+  <h1>All your friends recipes are here</h1>
+  
   <h2>Add a recipe</h2>
+</div>
   <form id="new-form" action="/recipes" method="POST">
-    <label>Name of recipe:
+    <div class="inputs"></div>
+    <label class="label" id="name">Name of recipe:
     <input type="text" name="name" required="required" autocomplete="off">
     </label>
-    <label>Ingredients:
+    <label class="label">Ingredients:
       <input type="text" name="ingredients" required="required" autocomplete="off">
     </label>
-    <label>Instructions:</label>
-    <input type="text" name="instructions" required="required"
+    <label class="label">Instructions:</label>
+    <input type="text" name="text" required="required"
     autocomplete="off">
+
+    <label for="url" class="label">Save URL:</label>
+    <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
     <button type="sumbit">Add recipe</button>
   </form>
+</div>
 
 	<ul>
   <% recipes.forEach(recipe => { %>
     <li>
-      <a href="/recipes/<%= recipe._id %>" class="link"><%= recipe.name %>
+      <a href="/recipes/<%= recipe._id %>" class="link"><%= recipe.name %></a>
+      <a href="<%= recipe.url %>"><%= recipe.name %></a>
       <% }) %></a>
     </li>
   </ul>
 </section>
-
+</body>
 <%- include('../partials/footer') %>

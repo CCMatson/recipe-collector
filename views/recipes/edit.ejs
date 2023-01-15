@@ -17,7 +17,23 @@
           autocomplete="off"
         >
       </label>
-      <button type="submit">Edit the recipe</button>
+      <label>
+        Ingredients:
+        <input 
+        type="text"
+        name="ingredients"
+        value="<%= recipe.ingredients %>"
+        >
+      </label>
+      <label>
+        Instructions:
+        <input 
+        type="text"
+        name="instructions"
+        value="<%= recipe.instructions %>"
+        >
+      </label>
+      <button type="submit">Save your changes</button>
     </form>
 
 

@@ -7,7 +7,7 @@ const recipeSchema = new Schema({
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
   time: Number, //should this be a string?
   ingredients: String, 
-  directions: String,
+  instructions: String,
 }, {
   timestamps: true
 })

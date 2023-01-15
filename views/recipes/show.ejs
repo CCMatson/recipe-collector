@@ -6,7 +6,7 @@
       <h1>
         <%= recipe.name %>
         <%= recipe.ingredients %> 
-        <%= recipe.directions %> 
+        <%= recipe.instructions %> 
         <p></p>
         <% if (recipe.owner.equals(user?.profile._id)) { %>
           <a href="/recipes/<%= recipe._id %>/edit">

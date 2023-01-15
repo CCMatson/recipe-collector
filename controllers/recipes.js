@@ -47,6 +47,7 @@ function show(req, res) {
 function edit(req, res) {
   Recipe.findById(req.params.id)
     .then(recipe => {
+      console.log('recipe edit works!')
       res.render('recipes/edit', {
         recipe,
         title: "edit 👩‍💻"
@@ -61,6 +62,7 @@ function edit(req, res) {
 function update(req, res) {
   Recipe.findById(req.params.id)
     .then(recipe => {
+      console.log('recipe update works!')
       if(recipe.owner.equals(req.user.profile._id)) {
         recipe.updateOne(req.body)
         .then(() => {

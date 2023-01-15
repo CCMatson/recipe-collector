@@ -5,8 +5,10 @@
       <p>From the kitchen of <%= recipe.owner.name %>...</p>
       <h1>
         <%= recipe.name %>
-        <%= recipe.ingredients %> 
-        <%= recipe.instructions %> 
+        --
+        <%= recipe.ingredients %>
+        --
+        <%= recipe.instructions %>
         <p></p>
         <% if (recipe.owner.equals(user?.profile._id)) { %>
           <a href="/recipes/<%= recipe._id %>/edit">

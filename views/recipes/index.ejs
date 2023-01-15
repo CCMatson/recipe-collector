@@ -1,7 +1,7 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<section>
+<section class="index-body">
   <h1>All your recipes are here</h1>
   <h2>Add a recipe</h2>
   <form id="new-form" action="/recipes" method="POST">
@@ -20,7 +20,7 @@
 	<ul>
   <% recipes.forEach(recipe => { %>
     <li>
-      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %>
+      <a href="/recipes/<%= recipe._id %>" class="link"><%= recipe.name %>
       <% }) %></a>
     </li>
   </ul>

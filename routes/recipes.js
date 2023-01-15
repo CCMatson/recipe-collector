@@ -8,7 +8,7 @@ router.get('/', recipesCtrl.index)
 router.get('/:id' , recipesCtrl.show)
 router.get('/:id/edit', isLoggedIn, recipesCtrl.edit)
 router.post('/', isLoggedIn, recipesCtrl.create)
-
+router.put('/:id', isLoggedIn, recipesCtrl.update)
 
 
 export {

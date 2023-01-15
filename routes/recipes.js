@@ -6,6 +6,7 @@ const router = Router()
 
 router.get('/', recipesCtrl.index)
 router.get('/:id' , recipesCtrl.show)
+router.get('/:id/edit', isLoggedIn, recipesCtrl.edit)
 router.post('/', isLoggedIn, recipesCtrl.create)
 
 

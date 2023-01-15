@@ -7,6 +7,12 @@
         <%= recipe.name %>
         <%= recipe.ingredients %> 
         <%= recipe.directions %> 
+        <p></p>
+        <% if (recipe.owner.equals(user?.profile._id)) { %>
+          <a href="/recipes/<%= recipe._id %>/edit">
+          <button class ="btn">Edit this recipe</button>
+          </a>
+        <% } %>  
     </section>
 
     <%- include('../partials/footer') %>

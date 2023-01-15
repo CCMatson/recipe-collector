@@ -37,7 +37,10 @@ main {
 
 }
 
-
 .right {
   margin-left: auto;
+}
+
+button{
+  border: 2px solid black;
 }

@@ -7,7 +7,7 @@ import { Profile } from '../models/profile.js'
       console.log("PROFILES 🐱")
       res.render('profiles/index', {
         profiles,
-        title: "🐱"
+        title: "User Profiles"
       })
     })
     .catch(err => {

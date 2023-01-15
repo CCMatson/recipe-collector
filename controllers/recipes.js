@@ -63,19 +63,37 @@ function update(req, res) {
   Recipe.findById(req.params.id)
     .then(recipe => {
       console.log('recipe update works!')
-      if(recipe.owner.equals(req.user.profile._id)) {
+      if (recipe.owner.equals(req.user.profile._id)) {
         recipe.updateOne(req.body)
-        .then(() => {
-          res.redirect(`/recipes/${recipe._id}`)
-        })
-    } else {
-      throw new Error('Not authorized')
-    }
-  })
-  .catch (err => {
-    console.log(err)
-    res.redirect('/recipes')
-  })
+          .then(() => {
+            res.redirect(`/recipes/${recipe._id}`)
+          })
+      } else {
+        throw new Error('Not authorized')
+      }
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/recipes')
+    })
+}
+
+function deleteRecipe(req, res) {
+  Recipe.findById(req.params.id)
+    .then(recipe => {
+      if (recipe.owner.equals(req.user.profile._id)) {
+        recipe.delete()
+          .then(() => {
+            res.redirect('/recipes')
+          })
+      } else {
+        throw new Error('Not authorized')
+      }
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/tacos')
+    })
 }
 
 export {
@@ -83,5 +101,6 @@ export {
   create,
   show,
   edit,
-  update
+  update,
+  deleteRecipe as delete,
 }

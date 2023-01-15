@@ -20,9 +20,9 @@
 	<ul>
   <% recipes.forEach(recipe => { %>
     <li>🤡
-      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %></a>
+      <a href="/recipes/<%= recipe._id %>"><%= recipe.name %><%= recipe.instructions %> 
+      <% }) %></a>
     </li>
-  <% }) %>
   </ul>
 </section>
 

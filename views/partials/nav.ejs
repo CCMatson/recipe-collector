@@ -4,9 +4,12 @@
 </head>
 <body>
   <nav>
-    <a href="/recipes">View All The Recipes</a>
-    --
-    <a href="/profiles">Profiles</a>
+    <div class="links">
+    <a id="recipes-link" href="/recipes">All Recipes</a>
+    <br>
+    <a id="profiles-link" href="/profiles">Profiles</a>
+  </div>
+
     <% if (user) { %>
       <a href="/auth/logout" class="right">
         <button type="submit">Logout</button>

@@ -1,0 +1,26 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/recipes/new.css" />
+<%- include('../partials/nav') %>
+
+<h1>Add a new recipe here:</h1>
+<div class="input">
+
+<form id="new-form" action="/recipes" method="POST">
+  <label for="name">Name of recipe:</label>
+  <input type="text" id="name" name="name" required="required" autocomplete="off" /> 
+  <p></p>
+  <label for="ingredients">Ingredients:</label>
+  <input type="text" id="ingredients" name="ingredients" required="required" autocomplete="off" />
+  <p></p>
+  <label for="instructions">Instructions:</label>
+  <input type="text" id="instructions" name="instructions" required="required"
+  autocomplete="off" />
+  <p></p>
+  <label for="url" class="label">Save URL: </label>
+  <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+  <button class="new-recipe" type="sumbit">Add recipe</button>
+</form>
+
+</div>
+
+<%- include('../partials/footer') %>

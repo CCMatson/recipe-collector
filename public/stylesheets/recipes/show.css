@@ -1,0 +1,47 @@
+body {
+background-color: #eae2b7;
+}
+
+.recipe-details{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline{
+  padding: 10px;
+}
+
+.recipe-name{
+padding: 10px;
+}
+
+.recipe-ingredients{
+  padding: 10px;
+}
+
+.recipe-instructions{
+  padding: 10px;
+}
+
+.recipe-url{
+  padding: 10px;
+}
+
+.buttons-box{
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review{
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+

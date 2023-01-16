@@ -1,0 +1,33 @@
+h1{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+button.new-recipe{
+  margin: 10px;
+  padding: 10px;
+  background-color: #144272;
+  color: #eae2b7;
+}
+
+button.new-recipe:focus{
+  margin: 10px;
+  padding: 10px;
+  background-color: orange;
+  color: #144272;
+}
+
+button.new-recipe:hover{
+  margin: 10px;
+  padding: 10px;
+  background-color: orange;
+  color: #144272;
+}

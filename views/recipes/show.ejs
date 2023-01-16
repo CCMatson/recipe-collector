@@ -1,25 +1,43 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/recipes/show.css">
   <%- include('../partials/nav') %>
 
+    <body>
     <section>
-      <p>From the kitchen of <%= recipe.owner.name %>...</p>
-      <h1>
+      <div class="recipe-details">
+      <div class="headline">From the kitchen of <%= recipe.owner.name %>...</div>
+      
+      <div class="recipe-name">Recipe name:
         <%= recipe.name %>
-        --
+      </div>
+      <div class="recipe-ingredients">Ingredients:
         <%= recipe.ingredients %>
-        --
-        <%= recipe.instructions %>
-        <p></p>
+      </div>
+      <div class="recipe-instructions">
+        Instructions:<%= recipe.instructions %>
+      </div>
+      <div class="recipe-url">
+          <a target="_blank" class="link-btn" href="<%= recipe.url %>">Link for <%= recipe.name %></a>
+        </div>
+      </div>
+
+        <div class="buttons-box">
         <% if (recipe.owner.equals(user?.profile._id)) { %>
           <a href="/recipes/<%= recipe._id %>/edit">
           <button class ="btn">Edit this recipe</button>
           </a>
           <form action="/recipes/<%= recipe._id %>?_method=DELETE" method="POST">
+            <div class="delete-button">
             <button class="btn" type="submit">Delete this recipe</button>
+          </div>
+
           </form>
         <% } %>  
+        </div>
+      </div>
   </section>
 
+  <div class="review">
   <h2>Reviews</h2>
   <form 
     id="add-review-form"
@@ -61,5 +79,7 @@
   <% } else { %>
     <h3>No Reviews Yet</h3>
   <% } %>
+</div>
+  </body>
 
     <%- include('../partials/footer') %>

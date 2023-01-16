@@ -1,0 +1,26 @@
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.edit-name{
+padding: 10px;
+}
+
+.edit-ingredients{
+  padding: 10px;
+}
+.edit-instructions {
+  padding: 10px;
+}
+
+.all-edit-inputs{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+padding: 10px;
+}

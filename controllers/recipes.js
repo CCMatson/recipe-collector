@@ -1,5 +1,11 @@
 import { Recipe } from '../models/recipe.js'
 
+function newRecipe(req, res){
+  res.render('recipes/new', {
+    title: 'Add recipe'
+  })
+}
+
 function index(req, res) {
   Recipe.find({})
     .then(recipes => {
@@ -20,7 +26,7 @@ function create(req, res) {
   Recipe.create(req.body)
     .then(recipe => {
       console.log('The create works!')
-      res.redirect('/recipes')
+      res.redirect('/recipes/index')
     })
     .catch(err => {
       console.log(err)
@@ -116,6 +122,7 @@ function createReview(req, res){
 }
 
 export {
+  newRecipe as new,
   index,
   create,
   show,

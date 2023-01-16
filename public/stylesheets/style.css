@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #afb9f0;
+  background-color: #eae2b7;
   color: #010f04;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -21,12 +21,24 @@ body {
 }
 
 nav {
-  background-color: #f6f6f6;
-  color: #1a1a1a;
+  background-color: #fcbf49;
   display: flex;
   align-items: center;
   padding: 10px;
   min-height: 60px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+#recipes-link {
+  color: #003049;
+}
+#profiles-link{
+  color: #003049;
 }
 
 main {
@@ -40,9 +52,6 @@ main {
   margin-left: auto;
 }
 
-button{
-  border: 2px solid black;
-}
 
 /* .index-body{
   color: blue;

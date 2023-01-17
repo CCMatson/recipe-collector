@@ -12,11 +12,14 @@ const reviewSchema = new Schema({
 const recipeSchema = new Schema({
   name: String,
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
-  time: Number, //should this be a string?
-  ingredients: String, 
+  ingredients: String,
+  // [{type: Schema.Types.ObjectId, ref: "Ingredient"}]
+  prepTime: String, 
+  cookTime: String,
   instructions: String,
   url: String,
-  reviews: [reviewSchema]
+  reviews: [reviewSchema],
+  mealCounter: Number,
 }, {
   timestamps: true
 })

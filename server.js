@@ -24,6 +24,7 @@ import { router as authRouter } from './routes/auth.js'
 import { router as recipesRouter } from './routes/recipes.js'
 import { router as profilesRouter } from './routes/profiles.js'
 
+
 // create the express app
 const app = express()
 

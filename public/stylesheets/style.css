@@ -12,33 +12,11 @@ html {
 }
 
 body {
-  background-color: #eae2b7;
   color: #010f04;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
   margin: 0;
-}
-
-nav {
-  background-color: #fcbf49;
-  padding: 10px;
-  min-height: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.links{
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-}
-
-#recipes-link {
-  color: #003049;
-}
-#profiles-link{
-  color: #003049;
 }
 
 main {
@@ -56,7 +34,3 @@ main {
 /* .index-body{
   color: blue;
 } */
-
-.link{
-  color: rgb(47, 21, 152);
-}

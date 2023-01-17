@@ -4,7 +4,9 @@
 
     <body>
     <section>
-      <div class="recipe-details">
+      <div class="center-display">
+      <div class="recipe-display">
+
       <div class="headline">From the kitchen of <%= recipe.owner.name %>...</div>
       
       <div class="recipe-name">Recipe name:
@@ -18,8 +20,9 @@
       </div>
       <div class="recipe-url">
           <a target="_blank" class="link-btn" href="<%= recipe.url %>">Link for <%= recipe.name %></a>
-        </div>
       </div>
+      </div>
+    </div>
 
         <div class="buttons-box">
         <% if (recipe.owner.equals(user?.profile._id)) { %>
@@ -37,6 +40,7 @@
       </div>
   </section>
 
+  <div class="review-display">
   <div class="review">
   <h2>Reviews</h2>
   <form 
@@ -79,6 +83,7 @@
   <% } else { %>
     <h3>No Reviews Yet</h3>
   <% } %>
+</div>
 </div>
   </body>
 

@@ -1,6 +1,8 @@
 <%- include('./partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/style.css">
 <%- include('./partials/nav') %>
 
+<body class="body-style">
 <main>
   <h1>Hello, <%= user ? user.profile.name : "friend" %></h1>
   <% if (user?.profile.avatar) { %>
@@ -12,5 +14,6 @@
     </div>
   <% } %>
 </main>
+</body>
 
 <%- include('./partials/footer') %>

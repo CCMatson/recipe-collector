@@ -102,3 +102,8 @@ a.recipe-list:hover{
   background: orange;
   color:#0A2647;
 }
+
+.search-box{
+  display: flex;
+  justify-content: center;
+}

@@ -1,44 +1,42 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/recipes/new.css" />
-<%- include('../partials/nav') %>
+  <link rel="stylesheet" href="/stylesheets/recipes/new.css" />
+  <%- include('../partials/nav') %>
 
-<body>
-  
+    <body>
+      <div class="input">
 
-  <div class="input">
-    
-    <form id="new-form" action="/recipes" method="POST">
-    <h1>Add a new recipe here:</h1>
-      
-      
-      
-      <div class="name-input">
-        <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required="required" autocomplete="off" /> 
-  </div>
+        <form id="new-form" action="/recipes" method="POST">
 
-  <div class="ingredient-input">
-  <label for="ingredients">Ingredients:</label>
-  <input type="text" id="ingredients" name="ingredients" required="required" autocomplete="off" />
-  </div>
+          <h1>Add a new recipe link here:</h1>
+          <h2>Enter the recipe name and paste the url in the spaces below: </h2>
 
-  <div class="instructions-input">
-  <label for="instructions">Instructions:</label>
-  <input type="text" id="instructions" name="instructions" required="required"
-  autocomplete="off" />
-</div>
+          <div class="name-input recipe-form-div">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required="required" autocomplete="off" />
+          </div>
 
-<div class="url-input">
-  <label for="url" class="label">Save URL: </label>
-  <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
-</div>
+          <!-- <div class="ingredient-input recipe-form-div">
+            <label for="ingredients" class="red">Ingredients:</label>
+            <input type="text" id="ingredients" name="ingredients" required="required" autocomplete="off" />
+          </div> -->
 
-  <button class="new-recipe" type="sumbit">Add recipe</button>
+          <!-- <div class="instructions-input recipe-form-div">
+            <label for="instructions">Instructions:</label>
+            <input type="text" id="instructions" name="instructions" required="required" autocomplete="off" />
+          </div> -->
 
-  </form>
+          <div class="url-input recipe-form-div">
+            <label for="url" class="label">Paste the URL: </label>
+            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+              required />
+          </div>
 
-</div>
+          <button class="new-recipe" type="sumbit">Save recipe</button>
 
-</body>
+        </form>
 
-<%- include('../partials/footer') %>
+      </div>
+
+    </body>
+
+    <%- include('../partials/footer') %>

@@ -4,7 +4,7 @@
 
 <body class="body-style">
 <main>
-  <h1>Hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1>Welcome to recipe collector, <%= user ? user.profile.name : "friend" %></h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -13,6 +13,13 @@
       />
     </div>
   <% } %>
+
+<div class="info-box">
+<h4>The website info and instructions will go here</h4>
+<h4>Save website url links for your favority recipes and share them with friends</h4>
+<h4>Sign in to add, edit, and delete recipes, and to rate and review all the recipes posted by the group</h4>
+</div>
+
 </main>
 </body>
 

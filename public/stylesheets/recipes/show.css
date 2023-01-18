@@ -6,30 +6,30 @@ nav {
   justify-content: space-evenly;
   font-size: 16px;
   padding: 10px;
-  }
-  
-  nav a {
+}
+
+nav a {
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   color: black;
-  }
+}
 
-  nav a:focus {
-    text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
-    color: red;
-    }
+nav a:focus {
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  color: red;
+}
 
-    nav a:hover {
-      text-decoration: none;
-      font-family: 'IBM Plex Mono', monospace;
-      color: red;
-      }
+nav a:hover {
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  color: red;
+}
 
-  nav button {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-  }
+nav button {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+}
 
 
 body {
@@ -46,7 +46,7 @@ section {
   background-color: white;
 }
 
-hr{
+hr {
   width: 75%;
 }
 
@@ -56,7 +56,7 @@ h1 {
   font-size: 32px;
 }
 
-.recipe-name{
+.recipe-name {
   padding: 10px;
 
 }
@@ -93,7 +93,7 @@ a.link-btns:hover {
   color: red;
 }
 
- .buttons-box {
+.buttons-box {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -102,11 +102,11 @@ a.link-btns:hover {
   padding: 20px;
 }
 
-.edit-button{
+.edit-button {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.btn{
+.btn {
   font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -128,7 +128,7 @@ form div {
   align-items: center;
 }
 
-#add-review-form{
+#add-review-form {
   display: flex;
   align-items: center;
   width: 100%;
@@ -136,8 +136,8 @@ form div {
   max-width: 700px;
 }
 
-#content-textarea{
-height: 32px;
+#content-textarea {
+  height: 32px;
 }
 
 th {
@@ -150,11 +150,11 @@ td {
   font-size: 16px;
 }
 
-h2{
+h2 {
   font-size: 32px;
   font-weight: 500;
 }
 
-.add-review{
+.add-review {
   font-family: 'IBM Plex Mono', monospace;
 }

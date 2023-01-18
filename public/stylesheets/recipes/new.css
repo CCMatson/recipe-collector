@@ -2,6 +2,7 @@
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   font-size: 16px;
   padding: 10px;
@@ -100,6 +101,12 @@ form button{
   font-size: 18px;
 }
 
+form button {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+}
 
 
 

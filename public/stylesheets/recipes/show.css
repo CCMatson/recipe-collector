@@ -2,6 +2,7 @@
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   font-size: 16px;
   padding: 10px;
@@ -55,22 +56,25 @@ h1 {
   font-size: 32px;
 }
 
+.recipe-name{
+  padding: 10px;
+
+}
+
 /* .center-display {
   display: flex;
   justify-content: center;
 } */
 
 .recipe-display {
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-
   font-size: 16;
- 
 }
+
 
 a {
   color: black;
@@ -80,7 +84,6 @@ a {
 a.link-btns {
   font-weight: 500;
   font-style: italic;
-  padding: 20px;
 
 }
 
@@ -90,20 +93,21 @@ a.link-btns:hover {
   color: red;
 }
 
-/* 
-a.link-btns:focus {
-  font-weight: 500;
-  font-style: italic;
-  padding: 10px;
-  color: red;
-} */
-
-
-.buttons-box {
+ .buttons-box {
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  align-items: flex-end;
+  font-family: 'IBM Plex Mono', monospace;
+  width: 350px;
   padding: 20px;
+}
+
+.edit-button{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn{
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 
@@ -117,9 +121,6 @@ a.link-btns:focus {
   background-color: white;
   font-size: 16px;
   border-radius: 10px;
-
-
-
 }
 
 form div {
@@ -152,4 +153,8 @@ td {
 h2{
   font-size: 32px;
   font-weight: 500;
+}
+
+.add-review{
+  font-family: 'IBM Plex Mono', monospace;
 }

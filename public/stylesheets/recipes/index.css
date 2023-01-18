@@ -2,6 +2,7 @@
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   font-size: 16px;
   padding: 10px;
@@ -29,6 +30,14 @@ nav {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
   }
+
+  form button {
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
 
 
 html {
@@ -145,5 +154,4 @@ h4 {
   font-weight: 500;
   font-size: 16px;
 }
-
 

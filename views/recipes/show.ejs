@@ -10,16 +10,20 @@
             <%= recipe.name %>
           </div>
 
+          <div class="magic-link">
           <a target="_blank" class="link-btns" href="<%= recipe.url %>">Link for <%= recipe.name %></a>
+          </div>
 
           <div class="buttons-box">
-            <% if (recipe.owner.equals(user?.profile._id)) { %>
-              <button class="btn"><a href="/recipes/<%= recipe._id %>/edit">Edit this recipe</a></button>
-              <form action="/recipes/<%= recipe._id %>?_method=DELETE" method="POST">
-                <button class="btn" type="submit">Delete this recipe</button>
+              <% if (recipe.owner.equals(user?.profile._id)) { %>
+                <button class="btn"><a href="/recipes/<%= recipe._id %>/edit">Edit recipe</a></button>
+                <form action="/recipes/<%= recipe._id %>?_method=DELETE" method="POST">
+                  <button class="btn" type="submit">Delete recipe</button>
+
               </form>
               <% } %>
           </div>
+
         </div>
         <hr>
         <div class="review">
@@ -30,10 +34,8 @@
               <label for="content-textarea" class="review-label">Review:</label>
               <textarea name="content" id="content-textarea"></textarea>
             </div>
-
             <div>
               <label for="rating-select">Rating:</label>
-
               <select name="rating" id="rating-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -42,10 +44,8 @@
                 <option value="5" selected>5</option>
               </select>
             </div>
-            <button type="submit">Add Review</button>
-
+            <button type="submit" class="add-review">Add Review</button>
           </form>
-
           <% if (recipe.reviews.length) { %>
             <table>
               <thead>
@@ -77,5 +77,4 @@
         </div>
       </section>
     </body>
-
     <%- include('../partials/footer') %>

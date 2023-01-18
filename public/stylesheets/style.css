@@ -56,18 +56,17 @@ main {
   flex-direction: column;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 16px;
-  padding: 10px;
-  }
   
-  nav a {
-  text-decoration: none;
-  }
+  
 
 .right{
   display: flex;
   justify-content: flex-end;
+}
+
+form button {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'IBM Plex Mono', monospace;
 }

@@ -2,46 +2,29 @@
   <link rel="stylesheet" href="/stylesheets/recipes/edit.css">
   <%- include('../partials/nav') %>
 
-  <body>
-    <section>
-        
-     
-      <h1>Edit the recipe 👩‍💻</h1>
-
-      <form id="new-form" action="/recipes/<%= recipe._id %>?_method=PUT" method="POST">
-        <div class="input-display">
-        <div class="all-edit-inputs">
-
-        <div class="edit-name">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" value="<%= recipe.name %>" autocomplete="off" />
-        </div>
-
-        <div class="edit-ingredients">
-          <label for="edit-ingredients">Ingredients:</label>
-          <input type="text" id="ingredients" name="ingredients" value="<%= recipe.ingredients %>" autocomplete="off">
-        </div>
-
-        <div class="edit-instructions">
-          <label for="instructions">Instructions:</label>
-          <input type="text" id="instructions" name="instructions" value="<%= recipe.instructions %>" autocomplete="off">
-        </div>
-
-        <div class="edit-url">
-          <label for="url">URL</label>
-          <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
-        </div>
-
-        <div class="btn">
-        <button type="submit">Save your changes</button>
-        </div>
-      </div>
-
-      </div>
-      </form>
-
-
-    </section>
-  </body>
+    <body>
+      <section>
+        <h1>Edit the recipe 👩‍💻</h1>
+        <h2>Make changes in the form below and then press the button to save</h2>
+        <form id="new-form" action="/recipes/<%= recipe._id %>?_method=PUT" method="POST">
+          <div class="input-display">
+            <div class="all-edit-inputs">
+              <div class="edit-name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="<%= recipe.name %>" autocomplete="off" />
+              </div>
+              <div class="edit-url">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                  required />
+              </div>
+              <div class="btn">
+                <button type="submit">Save your changes</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </body>
 
     <%- include('../partials/footer') %>

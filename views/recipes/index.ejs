@@ -3,27 +3,30 @@
   <%- include('../partials/nav') %>
 
     <body>
-      <section>
-        <div class="add-new-button">
-          <div>
-          <h1>Here are all the recipes</h1>
-          <h4>Click the recipes below to view details</h4>
-        </div>
-          <a class="add-new" href="/recipes/new">
-          <button>Add a new recipe</button>
-        </a>
-
-      </div>
-      
-      <div class="recipe-links">
-        <% recipes.forEach(recipe=> { %>
-            <a class="recipe-list" href="/recipes/<%= recipe._id %>">
-              <%= recipe.name %>
+      <main>
+        <section class="section-right">
+          <div class="add-new-button">
+            <div>
+              <h1>Here are all the recipes</h1>
+              <h4>Click the recipes below to view details</h4>
+            </div>
+            <a class="add-new" href="/recipes/new">
+              <button>Add a new recipe</button>
             </a>
-            <% }) %></a>
-    </div>
-    
 
-      </section>
+          </div>
+
+          <div class="recipe-links">
+            <% recipes.forEach(recipe=> { %>
+              <a class="recipe-list" href="/recipes/<%= recipe._id %>">
+                <%= recipe.name %>
+              </a>
+              <% }) %></a>
+          </div>
+        </section>
+        <section class="section-left">
+          <h1>Put an image here</h1>
+        </section>
+      </main>
     </body>
     <%- include('../partials/footer') %>

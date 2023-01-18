@@ -29,7 +29,7 @@ nav button {
 }
 
 main {
-  background-color: white;
+
   display: flex;
   justify-content: center;
   flex-direction: column;

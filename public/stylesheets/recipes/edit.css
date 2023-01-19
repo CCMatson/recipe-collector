@@ -59,8 +59,7 @@ form {
   padding: 16px 32px;
   background-color: white;
   font-family: 'IBM Plex Mono', monospace;
-
-
+  border-radius: 10px;
 }
 
 form div {
@@ -89,9 +88,13 @@ form button {
 }
 
 main{
-  width: 100%;
+  width: 95%;
   display: flex;
+  justify-content: center;
+  /* /* padding: 10px; */
+  border-radius: 10px;
   padding: 10px;
+  margin: auto;
 }
 
 .section-right{
@@ -119,4 +122,30 @@ main{
 
 button{
   background-color: #ffb703;
+}
+
+img {
+  height: auto;
+  width: 80%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-left {
+    border: solid black .05px;
+    border-radius: 10px;
+  }
+
+  .section-left {
+    display: none;
+    border: solid black .05px;
+    border-radius: 10px;
+  }
+  
 }

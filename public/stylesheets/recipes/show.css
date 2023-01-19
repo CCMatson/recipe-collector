@@ -84,6 +84,7 @@ h1 {
 a {
   color: black;
   text-decoration: none;
+  font-size: 16px;
 }
 
 a.link-btns {
@@ -115,6 +116,7 @@ a.link-btns:hover {
 .btn {
   font-family: 'IBM Plex Mono', monospace;
   background-color: #ffb703;
+  font-size: 16px;
 }
 
 

@@ -18,6 +18,8 @@
 <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by justicon - Flaticon</a>
 
 ## Icebox
-*Responsive and mobile design
+* Responsive and mobile design
+*Edit and delete reviews
+
 
 ## Planning Materials

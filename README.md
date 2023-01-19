@@ -2,7 +2,7 @@
 
 # [Open the app here](https://recipe-collector.fly.dev/) 
 
-![](/landing-page.png)
+![](public/landing-page.png)
 
 ## Technologies used
 * JavaScript

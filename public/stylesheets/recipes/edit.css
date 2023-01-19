@@ -51,18 +51,18 @@ h2 {
   justify-content: center;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
-  padding: 10px;
+  padding: 25px;
+
 }
 
 form {
   /* border: 1px solid blue; */
   padding: 16px 32px;
   font-family: 'IBM Plex Mono', monospace;
-  background-color: white;
-  border: solid black .05px;
-  border-radius: 10px;
+
+
 }
 
 form div {
@@ -88,4 +88,31 @@ form button {
   width: 100%;
   font-size: 16px;
   font-family: 'IBM Plex Mono', monospace;
+}
+
+main{
+  width: 100%;
+  display: flex;
+}
+
+.section-right{
+  width: 50%;
+  background-color: white;
+  border: solid black .05px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.section-left{
+  width: 50%;
+  background-color: black;
+  border: black solid 2px;
+  border: solid black .05px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

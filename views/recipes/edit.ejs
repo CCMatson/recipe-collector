@@ -3,8 +3,9 @@
   <%- include('../partials/nav') %>
 
     <body>
-      <section>
-        <h1>Edit the recipe 👩‍💻</h1>
+      <h1>Edit this recipe </h1>
+      <main>
+      <section class="section-right">
         <h2>Make changes in the form below and then press the button to save</h2>
         <form id="new-form" action="/recipes/<%= recipe._id %>?_method=PUT" method="POST">
           <div class="input-display">
@@ -25,6 +26,10 @@
           </div>
         </form>
       </section>
+      <section class="section-left">
+        <img src="/mixing.png" alt=""/>
+      </section>
+    </main>
     </body>
 
     <%- include('../partials/footer') %>

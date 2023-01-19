@@ -3,7 +3,9 @@
   <%- include('../partials/nav') %>
 
     <body>
-      <div class="input">
+      <main>
+
+      <section class="section-right">
         <form id="new-form" action="/recipes" method="POST">
           <h1>Add a new recipe link here:</h1>
           <h2>Enter the recipe name and paste the url in the spaces below: </h2>
@@ -18,7 +20,12 @@
           </div>
           <button class="new-recipe" type="sumbit">Save recipe</button>
         </form>
-      </div>
+      </section>
+
+      <section class="section-left">
+        <img src="/frying-pan.png" alt=""/>
+      </section>
+    </main>
     </body>
 
     <%- include('../partials/footer') %>

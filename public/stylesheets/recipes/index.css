@@ -176,11 +176,12 @@ h4 {
 
   main {
     display: flex;
-    justify-content: center;
-  }
+     }
 
   .section-left {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* h1{

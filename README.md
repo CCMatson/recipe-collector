@@ -1,6 +1,8 @@
 # Class Cookbook is a recipe collector app
 
-[Open the app here](https://recipe-collector.fly.dev/) 
+# [Open the app here](https://recipe-collector.fly.dev/) 
+
+![](/landing-page.png)
 
 ## Technologies used
 * JavaScript

@@ -55,3 +55,7 @@ form button {
 button {
   background-color: #ffb703;
 }
+
+img {
+  border-radius: 10px;
+}

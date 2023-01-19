@@ -82,3 +82,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 24px;
   margin: 0 10px;
 }
+
+img {
+  border-radius: 10px;
+}

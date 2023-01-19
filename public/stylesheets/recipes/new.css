@@ -29,6 +29,7 @@ nav a:hover {
 nav button {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  background-color: #ffb703;
 }
 
 nav {
@@ -103,11 +104,13 @@ form button {
   width: 100%;
   font-size: 16px;
   font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffb703;
 }
 
 main {
   width: 100%;
   display: flex;
+  padding: 10px;
 }
 
 .section-right {

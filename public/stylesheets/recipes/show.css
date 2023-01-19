@@ -29,6 +29,7 @@ nav a:hover {
 nav button {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  background-color: #ffb703;
 }
 
 
@@ -38,6 +39,10 @@ body {
   background-color: #fdf0cf;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffb703' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   font-family: 'IBM Plex Mono', monospace;
+}
+
+main{
+  padding: 10px;
 }
 
 section {
@@ -104,10 +109,12 @@ a.link-btns:hover {
 
 .edit-button {
   font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffb703;
 }
 
 .btn {
   font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffb703;
 }
 
 
@@ -157,4 +164,5 @@ h2 {
 
 .add-review {
   font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffb703;
 }

@@ -139,22 +139,24 @@ section a {
   text-decoration: none;
 }
 
-.add-new-button {
+.index-intro {
   display: flex;
   justify-content: space-between;
 }
 
-.add-new-button a {
+.index-intro a {
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   margin-top: 37px;
+  background-color: #ffb703;
 }
 
 button {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  background-color: #ffb703;
+  color: black;
 
 }
 

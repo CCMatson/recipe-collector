@@ -108,11 +108,16 @@ main{
 
 .section-left{
   width: 50%;
-  background-color: black;
+  background-color: white;
+  /* background-color: black; */
   border: black solid 2px;
   border: solid black .05px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button{
+  background-color: #ffb703;
 }

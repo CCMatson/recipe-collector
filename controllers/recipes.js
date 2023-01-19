@@ -9,7 +9,6 @@ function newRecipe(req, res){
 function index(req, res) {
   Recipe.find({})
     .then(recipes => {
-      console.log('The recipes index works!')
       res.render('recipes/index', {
         recipes,
         title: "Recipes"
@@ -25,7 +24,6 @@ function create(req, res) {
   req.body.owner = req.user.profile._id
   Recipe.create(req.body)
     .then(recipe => {
-      console.log('The create works!')
       res.redirect('/recipes/index')
     })
     .catch(err => {
@@ -38,10 +36,9 @@ function show(req, res) {
   Recipe.findById(req.params.id)
     .populate('owner')
     .then(recipe => {
-      console.log('The show works!')
       res.render('recipes/show', {
         recipe,
-        title: "recipe details"
+        title: "Recipe details"
       })
     })
     .catch(err => {
@@ -56,7 +53,7 @@ function edit(req, res) {
       console.log('recipe edit works!')
       res.render('recipes/edit', {
         recipe,
-        title: "edit 👩‍💻"
+        title: "Edit"
       })
     })
     .catch(err => {

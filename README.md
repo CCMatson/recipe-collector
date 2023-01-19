@@ -1,14 +1,17 @@
-# Welcome to the Recipe Collector app
+# Class Cookbook is a recipe collector app
+
+[Open the app here](https://recipe-collector.fly.dev/) 
 
 ## Technologies used
+* JavaScript
 * Express
 * Node JS
 * Mongoose
 * CSS
-* JavaScript
 * HTML
 * Git
 * Fly.io
+* Trello
 
 ## Credits
 <a href="https://www.flaticon.com/free-icons/ketchup" title="ketchup icons">Ketchup icons created by justicon - Flaticon</a>
@@ -19,7 +22,9 @@
 
 ## Icebox
 * Responsive and mobile design
-*Edit and delete reviews
+* Edit and delete reviews
+* Profile pages
 
 
-## Planning Materials
+## Planning Material s
+[This links to planning materials in Trello](https://trello.com/b/Ezs7xu3o/recipe-collector)

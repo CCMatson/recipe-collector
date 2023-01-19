@@ -1,27 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-html {
-  box-sizing: border-box;
-}
-
-/* The Universal Selector */
-*,
-/* All elements*/
-*::before,
-/* All ::before pseudo-elements */
-*::after {
-  /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default but can be overridden as needed */
-  box-sizing: inherit;
-}
-
 nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 16px;
   padding: 10px;
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 nav a {
@@ -33,18 +17,19 @@ nav a {
 nav a:focus {
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
-  color: #e63946;
+  color: red;
 }
 
 nav a:hover {
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
-  color: #e63946;
+  color: red;
 }
 
 nav button {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  background-color: #ffb703;
 }
 
 body {

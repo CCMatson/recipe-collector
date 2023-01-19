@@ -27,4 +27,4 @@
 
 
 ## Planning Material s
-[This links to planning materials in Trello](https://trello.com/b/Ezs7xu3o/recipe-collector)
+[Link to planning materials in Trello](https://trello.com/b/Ezs7xu3o/recipe-collector)

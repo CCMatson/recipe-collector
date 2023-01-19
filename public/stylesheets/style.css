@@ -60,29 +60,33 @@ form button {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-h1 {
-background-color: white;
-  padding: 10px;
+h1{
+  background-color: white;
+  font-style: italic;
   font-family: 'IBM Plex Mono', monospace;
+  border: solid black .05px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h4 {
+
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.section-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
   border: solid black .05px;
   border-radius: 10px;
 }
 
-h3{
-  font-size: none;
-}
-
-h4 {
-  font-style: italic;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-.info-box {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  font-family: 'IBM Plex Mono', monospace;
-}
 
 button {
   background-color: #ffb703;

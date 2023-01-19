@@ -170,10 +170,6 @@ h4 {
   font-size: 16px;
 }
 
-.btn-container{
-  background-color: green;
-  display: flex;
-}
 
 img {
   height: auto;
@@ -182,9 +178,6 @@ img {
 }
 
 @media (max-width: 800px) {
-  /* body{
-    grid-template-columns: 1fr;
-  } */
 
   main {
     display: flex;

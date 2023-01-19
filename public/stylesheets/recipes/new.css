@@ -46,7 +46,6 @@ nav a {
 }
 
 body {
-
   background-color: #fdf0cf;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffb703' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   font-family: 'IBM Plex Mono', monospace;
@@ -57,6 +56,8 @@ form {
   padding: 16px 32px;
   background-color: white;
   font-family: 'IBM Plex Mono', monospace;
+  border-radius: 10px;
+
 }
 
 form h1 {
@@ -95,26 +96,22 @@ form div input {
 form button {
   padding: 8px;
   width: 100%;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 18px;
-}
-
-form button {
-  padding: 8px;
-  width: 100%;
   font-size: 16px;
   font-family: 'IBM Plex Mono', monospace;
   background-color: #ffb703;
 }
 
 main {
-  width: 100%;
+  width: 95%;
   display: flex;
+  justify-content: center;
+  /* /* padding: 10px; */
+  border-radius: 10px;
   padding: 10px;
+  margin: auto;
 }
 
 .section-right {
-  border: 2px solid green;
   width: 50%;
   background-color: white;
   border: solid black .05px;
@@ -131,7 +128,33 @@ main {
   border-radius: 10px;
 }
 
-@media (max-width: 500px) {
+img {
+  height: auto;
+  width: 80%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-left {
+    border: solid black .05px;
+    border-radius: 10px;
+  }
+
+  .section-left {
+    display: none;
+    border: solid black .05px;
+    border-radius: 10px;
+  }
+  
+}
+
+/* @media (max-width: 500px) {
 
   main {
     display: flex;
@@ -148,7 +171,11 @@ main {
     border: solid black .05px;
     border-radius: 10px;
   }
-}
+
+  form h1{
+    font-size: 20px;
+  }
+} */
 
 
 /* h1{

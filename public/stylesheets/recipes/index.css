@@ -157,7 +157,6 @@ button {
   font-size: 16px;
   background-color: #ffb703;
   color: black;
-
 }
 
 h1 {
@@ -171,38 +170,44 @@ h4 {
   font-size: 16px;
 }
 
-@media (max-width: 500px) {
+.btn-container{
+  background-color: green;
+  display: flex;
+}
+
+img {
+  height: auto;
+  width: 80%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
   /* body{
     grid-template-columns: 1fr;
   } */
 
   main {
     display: flex;
-     }
+    flex-direction: column;
+  }
 
   .section-left {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
-
-  /* h1{
-    font-size: 16px;;
+  .section-right {
+    width: 90%;
+    min-width: 275px;
   }
 
-  .add-new-button button {
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    width: 50px;
-    font-size: 10px;
+  h1 {
+    font-size: 24px;
   }
-  
-  .add-new-button a {
-    text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-top: 37px;
-  } */
+
+  .new-button{
+    width: 75px;
+    height: 75px;
+  }
 
 }

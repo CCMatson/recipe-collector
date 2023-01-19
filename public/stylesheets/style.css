@@ -98,3 +98,8 @@ h4 {
   padding: 50px;
   font-family: 'IBM Plex Mono', monospace;
 }
+
+button {
+  background-color: #ffb703;
+}
+

@@ -51,3 +51,7 @@ form button {
   font-size: 16px;
   font-family: 'IBM Plex Mono', monospace;
 }
+
+button {
+  background-color: #ffb703;
+}

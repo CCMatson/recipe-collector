@@ -28,39 +28,7 @@ nav button {
   font-size: 16px;
 }
 
-/* form button {
-  padding: 8px;
-  width: 100%;
-  font-size: 16px;
-  font-family: 'IBM Plex Mono', monospace;
-  background-color: blue;
-} */
-
-
-
-html {
-  box-sizing: border-box
-}
-
-/* The Universal Selector */
-*,
-/* All elements*/
-*::before,
-/* All ::before pseudo-elements */
-*::after {
-  /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default
-     but can be over-ridden as needed */
-  box-sizing: inherit;
-}
-
-:root {
-  font-size: 62.5%;
-}
-
 body {
-
-  /* background-color: #eae2b7; */
   font-family: 'IBM Plex Mono', monospace;
   /* background-color: #eae2b7; */
   background-color: #fdf0cf;
@@ -68,10 +36,14 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-main {
-  width: 100%;
+main{
+  width: 95%;
   display: flex;
+  justify-content: center;
+  /* /* padding: 10px; */
+  border-radius: 10px;
   padding: 10px;
+  margin: auto;
 }
 
 section {

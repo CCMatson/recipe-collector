@@ -124,7 +124,7 @@ button{
   background-color: #ffb703;
 }
 
-img {
+.image  {
   height: auto;
   width: 80%;
   object-fit: cover;

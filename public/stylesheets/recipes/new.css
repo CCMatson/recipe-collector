@@ -128,7 +128,7 @@ main {
   border-radius: 10px;
 }
 
-img {
+.image {
   height: auto;
   width: 80%;
   object-fit: cover;

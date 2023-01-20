@@ -4,79 +4,73 @@
 
     <body>
       <main>
-      <section>
-        <div class="recipe-display">
-          <h1>From the kitchen of <%= recipe.owner.name %>...</h1>
-          <div class="recipe-name">Recipe name:
-            <%= recipe.name %>
-          </div>
-
-          <div class="magic-link">
-          <a target="_blank" class="link-btns" href="<%= recipe.url %>">Link for <%= recipe.name %></a>
-          </div>
-
-          <div class="buttons-box">
+        <section>
+          <div class="recipe-display">
+            <h1>From the kitchen of <%= recipe.owner.name %>...</h1>
+            <div class="recipe-name">Recipe name:
+              <%= recipe.name %>
+            </div>
+            <div class="magic-link">
+              <a target="_blank" class="link-btns" href="<%= recipe.url %>">Link for <%= recipe.name %></a>
+            </div>
+            <div class="buttons-box">
               <% if (recipe.owner.equals(user?.profile._id)) { %>
                 <button class="btn"><a href="/recipes/<%= recipe._id %>/edit">Edit recipe</a></button>
                 <form action="/recipes/<%= recipe._id %>?_method=DELETE" method="POST">
                   <button class="btn" type="submit">Delete recipe</button>
-
-              </form>
-              <% } %>
+                </form>
+                <% } %>
+            </div>
           </div>
-
-        </div>
-        <hr>
-        <div class="review">
-          <h2>Reviews</h2>
-
-          <form id="add-review-form" action="/recipes/<%= recipe._id %>/reviews" method="POST">
-            <div>
-              <label for="content-textarea" class="review-label">Review:</label>
-              <textarea name="content" id="content-textarea"></textarea>
-            </div>
-            <div>
-              <label for="rating-select">Rating:</label>
-              <select name="rating" id="rating-select">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5" selected>5</option>
-              </select>
-
-            </div>
-            <button type="submit" class="add-review">Add Review</button>
-          </form>
-          <% if (recipe.reviews.length) { %>
-            <table>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Review</th>
-                  <th>Rating</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% recipe.reviews.forEach(function(review) { %>
+          <hr>
+          <div class="review">
+            <h2>Reviews</h2>
+            <form id="add-review-form" action="/recipes/<%= recipe._id %>/reviews" method="POST">
+              <div>
+                <label for="content-textarea" class="review-label">Review:</label>
+                <textarea name="content" id="content-textarea"></textarea>
+              </div>
+              <div>
+                <label for="rating-select">Rating:</label>
+                <select name="rating" id="rating-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5" selected>5</option>
+                </select>
+              </div>
+              <button type="submit" class="add-review">Add Review</button>
+            </form>
+            <% if (recipe.reviews.length) { %>
+              <table>
+                <thead>
                   <tr>
-                    <td>
-                      <%= review.createdAt.toLocaleDateString() %>
-                    </td>
-                    <td>
-                      <%= review.content %>
-                    </td>
-                    <td>
-                      <%= review.rating %>
-                    </td>
+                    <th>Date</th>
+                    <th>Review</th>
+                    <th>Rating</th>
                   </tr>
-                  <% }) %>
-              </tbody>
-            </table>
-            <% } else { %>
-              <h3>No Reviews Yet</h3>
-              <% } %>
-        </div>
+                </thead>
+                <tbody>
+                  <% recipe.reviews.forEach(function(review) { %>
+                    <tr>
+                      <td>
+                        <%= review.createdAt.toLocaleDateString() %>
+                      </td>
+                      <td>
+                        <%= review.content %>
+                      </td>
+                      <td>
+                        <%= review.rating %>
+                      </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+              </table>
+              <% } else { %>
+                <h3>No Reviews Yet</h3>
+                <% } %>
+          </div>
         </section>
       </main>
     </body>

@@ -1,8 +1,12 @@
-# Class Cookbook is a recipe collector app
+# Class Cookbook is a recipe collector app.
 
 # [Open the app here](https://recipe-collector.fly.dev/) 
 
 ![](public/landing-page.png)
+
+## About the app
+#### This app is a link collector, inspired by Pinterest. "Class Cookbook" is modern update on the old-fashioned community cook book. This app was created using MEN stack, with database storage supported by mongoose and MongoDB.
+
 
 ## Technologies used
 * JavaScript

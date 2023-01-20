@@ -1,6 +1,6 @@
 import { Recipe } from '../models/recipe.js'
 
-function newRecipe(req, res){
+function newRecipe(req, res) {
   res.render('recipes/new', {
     title: 'Add recipe'
   })
@@ -50,7 +50,6 @@ function show(req, res) {
 function edit(req, res) {
   Recipe.findById(req.params.id)
     .then(recipe => {
-      console.log('recipe edit works!')
       res.render('recipes/edit', {
         recipe,
         title: "Edit"
@@ -65,7 +64,6 @@ function edit(req, res) {
 function update(req, res) {
   Recipe.findById(req.params.id)
     .then(recipe => {
-      console.log('recipe update works!')
       if (recipe.owner.equals(req.user.profile._id)) {
         recipe.updateOne(req.body)
           .then(() => {
@@ -99,23 +97,23 @@ function deleteRecipe(req, res) {
     })
 }
 
-function createReview(req, res){
+function createReview(req, res) {
   Recipe.findById(req.params.id)
-  .then(recipe => {
-    recipe.reviews.push(req.body)
-    recipe.save()
-    .then(() => {
-      res.redirect(`/recipes/${recipe._id}`)
+    .then(recipe => {
+      recipe.reviews.push(req.body)
+      recipe.save()
+        .then(() => {
+          res.redirect(`/recipes/${recipe._id}`)
+        })
+        .catch(err => {
+          console.log(err)
+          res.redirect('/')
+        })
     })
     .catch(err => {
       console.log(err)
       res.redirect('/')
     })
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/')
-  })
 }
 
 export {

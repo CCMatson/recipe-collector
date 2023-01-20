@@ -32,7 +32,6 @@ nav button {
   background-color: #ffb703;
 }
 
-
 body {
   background-color: #eae2b7;
   background-color: #eae2b7;
@@ -66,7 +65,6 @@ h1 {
 
 }
 
-
 .recipe-display {
   display: flex;
   flex-direction: column;
@@ -75,7 +73,6 @@ h1 {
   border-radius: 10px;
   font-size: 16;
 }
-
 
 a {
   color: black;
@@ -114,8 +111,6 @@ a.link-btns:hover {
   background-color: #ffb703;
   font-size: 16px;
 }
-
-
 
 .review {
   display: flex;
